@@ -1,8 +1,10 @@
 <template>
   <div>
     <Header></Header>
-    <router-view></router-view>
-    <BGLines />
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+      <BGLines />
+    </transition>
   </div>
 </template>
 
@@ -18,4 +20,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+  .fade-enter-active, .fade-leave-active {
+    transition: all 0.6s ease;
+  }
+  .fade-enter, .fade-leave-to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+</style>

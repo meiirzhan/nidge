@@ -1,7 +1,7 @@
 <template>
     <div class="col-md-6 col-6 text-wrapper">
       <h1 v-html="title"></h1>
-      <div class="description">{{ description }}</div>
+      <div class="description"  v-html="description"></div>
       <button type="button" class="btn btn-calc btn-lg-2x">Расссчитать стоимость проекта</button>
       <br />
       <a href="#">Есть вопросы? <span>Получите консультацию</span></a>
