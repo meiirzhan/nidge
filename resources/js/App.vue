@@ -2,18 +2,18 @@
   <div>
     <Header></Header>
     <router-view></router-view>
-    <Footer></Footer>
+    <BGLines />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import BGLines from "./components/BGLines";
 export default {
   name: "App",
   components: {
     Header,
-    Footer
+    BGLines
   }
 };
 </script>

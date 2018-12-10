@@ -12,3 +12,45 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+html, body {
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+.main-part {
+  z-index: 2;
+}
+a {
+  color: black;
+  &:hover, &:active, &:focus {
+    color: lighten(black, 10%);
+    text-decoration: none;
+  }
+}
+.row-wo-mg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.btn {
+  border-radius: 0;
+}
+.btn-calc {
+  border: 1px solid $green;
+  color: $green;
+  background: transparent;
+  font-weight: lighter;
+  &:hover, &:active, &:focus {
+    background: $green;
+    color: white;
+  }
+}
+.btn-lg-2x {
+  padding: 20px 30px;
+  font-size: 1.2rem;
+}
