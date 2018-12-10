@@ -1,8 +1,8 @@
 <template>
-    <div class="col-md-6 col-6 text-wrapper">
+    <div class="col-md-6 col-12 text-wrapper">
       <h1 v-html="title"></h1>
       <div class="description"  v-html="description"></div>
-      <button type="button" class="btn btn-calc btn-lg-2x">Расссчитать стоимость проекта</button>
+      <button type="button" class="btn btn-calc btn-lg-2x calc">Расссчитать стоимость проекта</button>
       <br />
       <a href="#">Есть вопросы? <span>Получите консультацию</span></a>
       <router-link tag="div" to="/" class="show-project">
@@ -64,4 +64,15 @@
   .show-project a {
     font-size: 1.2rem;
   }
+  @media (max-width: 767px) {
+    .calc {
+      padding: 0.6rem 0.5rem;
+    }
+    .show-project {
+      position: static;
+      bottom: auto;
+      margin-bottom: 1rem;
+    }
+  }
+  
 </style>

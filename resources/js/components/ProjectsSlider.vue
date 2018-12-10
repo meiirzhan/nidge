@@ -114,4 +114,9 @@
     opacity: 1;
     background-color: #C4C4C4;
   }
+  @media (max-width: 767px) {
+    .slider-item {
+      height: auto;
+    }
+  }
 </style>

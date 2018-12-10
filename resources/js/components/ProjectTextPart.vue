@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-6 col-6 text-wrapper">
+    <div class="col-md-6 col-12 text-wrapper">
       <h1 v-html="project.title"></h1>
       <div class="description">{{ project.subtitle }}</div>
       <a :href="'http://' + project.link"  target="_blank" class="project-link">{{ project.link }}</a>
@@ -20,7 +20,7 @@
       </div>
       <!-- TODO PROJECTS -->
       <ProjectsSlider :projects="projects" />
-      <button type="button" class="btn btn-calc btn-lg-2x">Расссчитать стоимость проекта</button>
+      <button type="button" class="btn btn-calc btn-lg-2x calc">Расссчитать стоимость проекта</button>
       <br />
       <a href="#" class="any-question">Есть вопросы? <span>Получите консультацию</span></a>
       <div class="show-project">
@@ -153,5 +153,15 @@
   }
   .review .author .author-name p {
     font-weight: lighter;
+  }
+  @media (max-width: 767px) {
+    .calc {
+      padding: 0.6rem 0.5rem;
+    }
+    .show-project {
+      position: static;
+      bottom: auto;
+      margin-bottom: 1rem;
+    }
   }
 </style>

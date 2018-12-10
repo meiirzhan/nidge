@@ -10483,6 +10483,16 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+  body {
+    overflow: scroll;
+  }
+
+  .lines-holder {
+    display: none;
+  }
+}
+
 .main-part {
   z-index: 2;
 }

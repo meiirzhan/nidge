@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-6 col-6 main-image-wrapper">
+    <div class="col-md-6 col-12 main-image-wrapper">
     	<yandex-map 
 		  :coords="[43.229767, 76.943013]"
 		  zoom="18"
@@ -46,8 +46,7 @@
     overflow: hidden;
     z-index: 2;
   }
-  .main-image {
-    height: 100vh;
-    width: auto;
+  .main-image-wrapper > section {
+  	height: 300px !important;
   }
 </style>
