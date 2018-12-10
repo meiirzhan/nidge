@@ -26,7 +26,7 @@
     z-index: 2;
   }
   .main-image {
-    height: 100vh;
-    width: auto;
+    height: auto;
+    width: 50wh;
   }
 </style>

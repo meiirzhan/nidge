@@ -20,7 +20,7 @@ export default new Router({
     },
     {
       name: "projects",
-      path: "/projects",
+      path: "/projects/:projectId?",
       component: Project,
     },
     {

@@ -1,24 +1,97 @@
 <template>
     <div class="row-wo-mg main-part">
-      <ImagePart src="/img/projects/1.png" />
+      <ImagePart :src="projects[activeProjectId].image" />
       <ProjectTextPart
-        title="Разработаем крутой <img src='/img/fire.png' style='width: 2.5rem' /><br />веб-сайт, нарисуем дизайн и снимем проморолик"
-        description="от которого Ваши клиенты будут бежать своими деньгами к Вам"
+        :project="projects[activeProjectId]"
+        :projects="projects"
          />
     </div>
 </template>
 
 <script>
     import ImagePart from "../components/ImagePart";
-    import TextPart from "../components/TextPart";
+    import ProjectTextPart from "../components/ProjectTextPart";
 
     export default {
         components: {
           ImagePart,
-          TextPart
+          ProjectTextPart
+        },
+        data: function () {
+          return {
+            projects: [
+              {
+                image: '/img/projects/1.png',
+                title: "CRM Система для EVENT агенств",
+                subtitle: "Разработано 2017 году",
+                link: "waultr.com",
+                reviewText: "Ребята круто разработали систему что облегчало нам работу с управлением мероприятии",
+                authorName: "Ахметов Темирлан",
+                authorCompany: "Директор DelphinAgency",
+                authorAvatar: "/img/projects/1_author.png"
+              },
+              {
+                image: '/img/main.jpg',
+                title: "CRM Система для Автоломбарадов",
+                subtitle: "Разработано 2018 году",
+                link: "automoney.com",
+                reviewText: "Ребята круто разработали систему что облегчало нам работу с управлением мероприятии",
+                authorName: "Бауыржан Бирбале",
+                authorCompany: "Директор DelphinAgency",
+                authorAvatar: "/img/projects/1_author.png"
+              },
+              {
+                image: '/img/projects/1.png',
+                title: "Портал для тур покупок",
+                subtitle: "Разработано 2017 году",
+                link: "waultr.com",
+                reviewText: "Ребята круто разработали систему что облегчало нам работу с управлением мероприятии",
+                authorName: "Ахметов Темирлан",
+                authorCompany: "Директор DelphinAgency",
+                authorAvatar: "/img/projects/1_author.png"
+              },
+              {
+                image: '/img/projects/1.png',
+                title: "CRM Система для EVENT агенств",
+                subtitle: "Разработано 2017 году",
+                link: "waultr.com",
+                reviewText: "Ребята круто разработали систему что облегчало нам работу с управлением мероприятии",
+                authorName: "Ахметов Темирлан",
+                authorCompany: "Директор DelphinAgency",
+                authorAvatar: "/img/projects/1_author.png"
+              },
+              {
+                image: '/img/projects/1.png',
+                title: "CRM Система для Автоломбарадов",
+                subtitle: "Разработано 2018 году",
+                link: "automoney.com",
+                reviewText: "Ребята круто разработали систему что облегчало нам работу с управлением мероприятии",
+                authorName: "Бауыржан Бирбале",
+                authorCompany: "Директор DelphinAgency",
+                authorAvatar: "/img/projects/1_author.png"
+              },
+              {
+                image: '/img/projects/1.png',
+                title: "Портал для тур покупок",
+                subtitle: "Разработано 2017 году",
+                link: "waultr.com",
+                reviewText: "Ребята круто разработали систему что облегчало нам работу с управлением мероприятии",
+                authorName: "Ахметов Темирлан",
+                authorCompany: "Директор DelphinAgency",
+                authorAvatar: "/img/projects/1_author.png"
+              }
+            ],
+            projectId: 0
+          }
+        },
+        computed: {
+          activeProjectId: function() {
+            let projectId = this.$route.params.projectId;
+            return typeof projectId === 'undefined' && !this.projects[projectId] ? this.projectId : projectId;
+          }
         },
         mounted() {
-
+          console.log(this.$route.params.projectId);
         }
     }
 </script>
