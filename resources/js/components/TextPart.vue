@@ -1,8 +1,7 @@
 <template>
-    <div class="col-md-6 col-6 text-wrapper">
+    <div class="col-md-6 col-12 text-wrapper">
       <h1 v-html="title"></h1>
       <div class="description"  v-html="description"></div>
-      <footer></footer>
       <CalculateButton />
       <router-link tag="div" to="/" class="show-project">
         <a>Посмотреть проекты <img src="/img/arrow.png" /></a>
@@ -69,4 +68,15 @@
   .show-project a {
     font-size: 1.2rem;
   }
+  @media (max-width: 767px) {
+    .calc {
+      padding: 0.6rem 0.5rem;
+    }
+    .show-project {
+      position: static;
+      bottom: auto;
+      margin-bottom: 1rem;
+    }
+  }
+
 </style>

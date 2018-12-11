@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-6 col-6 text-wrapper">
+    <div class="col-md-6 col-12 text-wrapper">
       <h1 v-html="project.title"></h1>
       <div class="description">{{ project.subtitle }}</div>
       <a :href="'http://' + project.link"  target="_blank" class="project-link">{{ project.link }}</a>
@@ -143,5 +143,15 @@
   }
   .review .author .author-name p {
     font-weight: lighter;
+  }
+  @media (max-width: 767px) {
+    .calc {
+      padding: 0.6rem 0.5rem;
+    }
+    .show-project {
+      position: static;
+      bottom: auto;
+      margin-bottom: 1rem;
+    }
   }
 </style>

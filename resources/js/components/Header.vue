@@ -1,12 +1,18 @@
 <template>
     <div class="container-fluid" id="header">
-      <div class="row">
-        <div class="col-md-6 col-6">
-          <img src="/img/logo.png" alt="">
+      <div class="row mt-3">
+        <div class="col-xl-6 col-4">
+          <img src="/img/logo.png" alt="" class="logo-mb">
         </div>
-        <div class="col-md-6 col-6">
+        <div class="col-8 d-block d-xl-none text-right">
+          <p class="mb-0">Есть вопросы? Звони :)</p>
+          <div class="phone-number">
+          +7 708 708 0495
+          </div>
+        </div>
+        <div class="col-xl-6 col-12">
           <div class="row">
-            <div class="col-8 col-md-8">
+            <div class="col-12 col-xl-8">
               <ul class="nav">
                 <router-link tag="li" to="/">
                   <a>Главная</a>
@@ -22,7 +28,7 @@
                 </router-link>
               </ul>
             </div>
-            <div class="col-12 col-md-4 phone-number-wrapper">
+            <div class="col-xl-4 phone-number-wrapper d-none d-xl-block">
               <p>Есть вопросы? Звони :)</p>
               <div class="phone-number">
               +7 708 708 0495
@@ -46,6 +52,9 @@
   #header {
     position: absolute;
     z-index: 3;
+  }
+  .logo-mb {
+    width: 150px;
   }
   .nav li {
     padding: 30px 15px;
@@ -78,5 +87,24 @@
     font-weight: bold;
     font-family: 'Rubik';
     font-size: 1.5rem;
+  }
+  .phone-number {
+    font-weight: bold;
+    font-family: 'Rubik';
+    font-size: 1rem;
+  }
+  @media (max-width: 1024px) {
+    #header {
+      position: static;
+    }
+    .nav li {
+      padding: 15px 7.5px;
+    }
+    .nav li a {
+      font-size: 0.9rem;
+    }
+    .nav {
+      justify-content: space-around;   
+    }
   }
 </style>

@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import { VueSlideoutPanel } from 'vue2-slideout-panel';
-import Footer from './components/Footer';
+
 
 import ErrorFilter from "./common/error.filter";
 
