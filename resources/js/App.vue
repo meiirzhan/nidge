@@ -1,6 +1,8 @@
 <template>
   <div>
     <Header></Header>
+    <slideout-panel></slideout-panel>
+    <Footer />
     <transition name="fade" mode="out-in">
       <router-view></router-view>
       <BGLines />

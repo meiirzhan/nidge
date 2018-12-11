@@ -2,9 +2,8 @@
     <div class="col-md-6 col-6 text-wrapper">
       <h1 v-html="title"></h1>
       <div class="description"  v-html="description"></div>
-      <button type="button" class="btn btn-calc btn-lg-2x">Расссчитать стоимость проекта</button>
-      <br />
-      <a href="#">Есть вопросы? <span>Получите консультацию</span></a>
+      <footer></footer>
+      <CalculateButton />
       <router-link tag="div" to="/" class="show-project">
         <a>Посмотреть проекты <img src="/img/arrow.png" /></a>
       </router-link>
@@ -12,8 +11,14 @@
 </template>
 
 <script>
+
+    import CalculateButton from './CalculateButton';
+
     export default {
         name: "TextPart",
+        components: {
+          CalculateButton
+        },
         props: {
           title: {
             type: String,

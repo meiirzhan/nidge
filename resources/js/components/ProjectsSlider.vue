@@ -6,7 +6,7 @@
       <swiper :options="swiperOption"  ref="mySwiper">
         <swiper-slide v-for="(project, index) in projects" :key="index" >
           <div class="slider-item" v-on:click="handleProjectClick(index)">
-            <img :src="project.image" class="img-fluid" alt="">
+            <img :src="project.image" class="img-fluid" alt="" />
           </div>
         </swiper-slide>
       </swiper>

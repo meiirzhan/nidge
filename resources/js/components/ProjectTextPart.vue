@@ -18,11 +18,8 @@
           </div>
         </div>
       </div>
-      <!-- TODO PROJECTS -->
       <ProjectsSlider :projects="projects" />
-      <button type="button" class="btn btn-calc btn-lg-2x">Расссчитать стоимость проекта</button>
-      <br />
-      <a href="#" class="any-question">Есть вопросы? <span>Получите консультацию</span></a>
+      <CalculateButton />
       <div class="show-project">
         <a :href="'http://' + project.link">Посмотреть сайт <img src="/img/arrow.png" /></a>
       </div>
@@ -30,11 +27,15 @@
 </template>
 
 <script>
+
     import ProjectsSlider from './ProjectsSlider';
+    import CalculateButton from './CalculateButton';
+
     export default {
         name: "ProjectTextPart",
         components: {
-          ProjectsSlider
+          ProjectsSlider,
+          CalculateButton
         },
         props: {
           projects: {
@@ -100,17 +101,6 @@
   }
   .description, .project-link {
     font-size: 1.2rem;
-  }
-  button {
-    margin-top: 2rem;
-  }
-  a.any-question {
-    display: inline-block;
-    font-weight: bold;
-    margin-top: 1rem;
-  }
-  a.any-question span {
-    text-decoration: underline;
   }
   .show-project {
     position: absolute;
