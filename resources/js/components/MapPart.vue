@@ -46,7 +46,9 @@
     overflow: hidden;
     z-index: 2;
   }
-  .main-image-wrapper > section {
-  	height: 300px !important;
+  @media (max-width: 1024px;) {
+  	.main-image-wrapper > section {
+	  	height: 300px !important;
+	  }
   }
 </style>

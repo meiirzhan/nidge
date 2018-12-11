@@ -1,18 +1,18 @@
 <template>
     <div class="container-fluid" id="header">
       <div class="row mt-3">
-        <div class="col-lg-6 col-4">
+        <div class="col-xl-6 col-4">
           <img src="/img/logo.png" alt="" class="logo-mb">
         </div>
-        <div class="col-8 d-block d-lg-none text-right">
+        <div class="col-8 d-block d-xl-none text-right">
           <p class="mb-0">Есть вопросы? Звони :)</p>
           <div class="phone-number">
           +7 708 708 0495
           </div>
         </div>
-        <div class="col-lg-6 col-12">
+        <div class="col-xl-6 col-12">
           <div class="row">
-            <div class="col-12 col-lg-8">
+            <div class="col-12 col-xl-8">
               <ul class="nav">
                 <router-link tag="li" to="/">
                   <a>Главная</a>
@@ -28,7 +28,7 @@
                 </router-link>
               </ul>
             </div>
-            <div class="col-lg-4 phone-number-wrapper d-none d-lg-block">
+            <div class="col-xl-4 phone-number-wrapper d-none d-xl-block">
               <p>Есть вопросы? Звони :)</p>
               <div class="phone-number">
               +7 708 708 0495
@@ -93,7 +93,7 @@
     font-family: 'Rubik';
     font-size: 1rem;
   }
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
     #header {
       position: static;
     }
