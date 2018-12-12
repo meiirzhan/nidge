@@ -11,8 +11,11 @@
 </template>
 
 <script>
+
 import Header from "./components/Header";
 import BGLines from "./components/BGLines";
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
 export default {
   name: "App",
   components: {
