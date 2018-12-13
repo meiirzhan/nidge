@@ -6,7 +6,7 @@
       <swiper :options="swiperOption"  ref="mySwiper">
         <swiper-slide v-for="(project, index) in projects" :key="index" >
           <div class="slider-item" v-on:click="handleProjectClick(index)">
-            <img :src="project.image" class="img-fluid" alt="" />
+            <img :src="project.image_fw" class="img-fluid" alt="" />
           </div>
         </swiper-slide>
       </swiper>
@@ -83,7 +83,7 @@
   .slider-item {
     width: 100%;
     overflow: hidden;
-    height: 150px;
+    height: 160px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     margin: 20px;
   }
