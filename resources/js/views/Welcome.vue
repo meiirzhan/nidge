@@ -1,6 +1,6 @@
 <template>
     <div class="row-wo-mg main-part">
-      <ImagePart src="/img/main.jpg" />
+      <VideoPart />
       <TextPart
         title="Разработаем крутой <img src='/img/fire.png' style='width: 2.5rem' /><br />веб-сайт, нарисуем дизайн и снимем проморолик"
         description="от которого Ваши клиенты будут бежать своими деньгами к Вам"
@@ -9,12 +9,12 @@
 </template>
 
 <script>
-    import ImagePart from "../components/ImagePart";
+    import VideoPart from "../components/VideoPart";
     import TextPart from "../components/TextPart";
 
     export default {
         components: {
-          ImagePart,
+          VideoPart,
           TextPart
         },
         mounted() {

@@ -1,21 +1,18 @@
 <template>
     <div class="row-wo-mg main-part">
-      <ImagePart src="/img/main.jpg" />
-      <TextPart
-        title="Cоздадим веб сайт / мобильное приложение"
-        description="от которого Ваши клиенты будут бежать своими деньгами к Вам"
-         />
+      <VideoPart  />
+      <ServicePart />
     </div>
 </template>
 
 <script>
-    import ImagePart from "../components/ImagePart";
-    import TextPart from "../components/TextPart";
+    import VideoPart from "../components/VideoPart";
+    import ServicePart from "../components/ServicePart";
 
     export default {
         components: {
-          ImagePart,
-          TextPart
+          VideoPart,
+          ServicePart
         },
         mounted() {
 
