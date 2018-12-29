@@ -32,6 +32,7 @@
   .main-video-wrapper {
     overflow: hidden;
     z-index: 2;
+    min-height: 300px;
     position: relative;
   }
   .video-wrapper {

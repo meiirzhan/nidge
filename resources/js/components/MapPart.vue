@@ -1,6 +1,6 @@
 <template>
-    <div class="col-md-6 col-12 main-image-wrapper">
-    	<yandex-map 
+    <div class="col-md-6 col-12 main-map-wrapper">
+    	<yandex-map
 		  :coords="[43.229767, 76.943013]"
 		  zoom="18"
 		  style="width: 100%; height: 100%;"
@@ -9,13 +9,13 @@
 		  }"
 		  :behaviors="['ruler']"
 		  :controls="['trafficControl']"
-		  :placemarks="placemarks" 
+		  :placemarks="placemarks"
 		  map-type="map"
 		  @map-was-initialized="initHandler"
 		  class="main-image"
 		>
 
-		    <ymap-marker 
+		    <ymap-marker
 		      marker-id="1"
 		      marker-type="placemark"
 		      :coords="[43.229767, 76.943013]"
@@ -31,24 +31,25 @@
 
 <script>
 	const { yandexMap, ymapMarker } = require('vue-yandex-maps');
-
-    export default {
-        name: "MapPart",
-        components: {
-			yandexMap,
-			ymapMarker
-        }
-    }
+  export default {
+      name: "MapPart",
+      components: {
+  			yandexMap,
+  			ymapMarker
+      }
+  }
 </script>
 
 <style scoped>
-  .main-image-wrapper {
+  .main-map-wrapper {
     overflow: hidden;
     z-index: 2;
   }
-  @media (max-width: 1024px;) {
-  	.main-image-wrapper > section {
-	  	height: 300px !important;
+  @media (max-width: 728px) {
+    .main-map-wrapper,
+  	.main-map-wrapper > section
+     {
+	  	height: 300px;
 	  }
   }
 </style>

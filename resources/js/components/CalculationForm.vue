@@ -1,5 +1,6 @@
 <template>
     <div class="calculator-wrapper">
+      <div class="close" @click="close">&times;</div>
       <h1>Калькулятор</h1>
       <p>Выберите ваши требования и мы посчитаем примерную цену</p>
       <div class="row">
@@ -52,7 +53,7 @@
                 <pulse-loader :loading="loading" :color="color" v-if="isLoading"></pulse-loader>
                 <span v-else>{{ buttonText }}</span>
               </button>
-              <p class="confidencial">Все данные конфедициальны</p>
+              <!-- <p class="confidencial">Все данные конфедициальны</p> -->
             </form>
           </div>
       </div>
@@ -94,6 +95,12 @@
             buttonText: 'Отправить заявку'
           }
         },
+        props: {
+          close: {
+            type: Function,
+            required: true
+          }
+        },
         methods: {
           productChanged: function(e) {
             this.calculate(e, this.typeSelected, this.designSelected, this.has_tz);
@@ -121,8 +128,16 @@
           onSubmit: function(e) {
             e.preventDefault();
             this.isLoading = true;
+            const product = this.productOptions.filter(tempProduct => tempProduct.value == this.productSelected);
+            const type = this.typeOptions.filter(tempType => tempType.value == this.typeSelected);
+            const design = this.designOptions.filter(tempDesign => tempDesign.value == this.designSelected);
             axios
               .post('/api/form', {
+                type,
+                product,
+                design,
+                total: this.priceMF,
+                has_tz: this.has_tz,
                 name: this.name,
                 phone: this.phone
               })

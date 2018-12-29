@@ -7,7 +7,7 @@
         <div class="col-8 d-block d-xl-none text-right">
           <p class="mb-0">Есть вопросы? Звони :)</p>
           <div class="phone-number">
-          +7 708 708 0495
+            <a href="tel:87087080495">+7 708 708 0495</a>
           </div>
         </div>
         <div class="col-xl-6 col-12">
@@ -31,7 +31,7 @@
             <div class="col-xl-4 phone-number-wrapper d-none d-xl-block">
               <p>Есть вопросы? Звони :)</p>
               <div class="phone-number">
-              +7 708 708 0495
+                <a href="tel:87087080495">+7 708 708 0495</a>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@
       font-size: 0.9rem;
     }
     .nav {
-      justify-content: space-around;   
+      justify-content: space-around;
     }
   }
 </style>

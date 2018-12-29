@@ -1,17 +1,17 @@
 <template>
     <div class="row-wo-mg main-part">
-      <VideoPart  />
+      <ImagePart src="/img/service_2.jpg" mobsrc="/img/service.jpg" />
       <ServicePart />
     </div>
 </template>
 
 <script>
-    import VideoPart from "../components/VideoPart";
+    import ImagePart from "../components/ImagePart";
     import ServicePart from "../components/ServicePart";
 
     export default {
         components: {
-          VideoPart,
+          ImagePart,
           ServicePart
         },
         mounted() {

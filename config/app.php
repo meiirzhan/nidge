@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+         Bigperson\AmoCrmApi\AmoCrmApiServiceProvider::class,
         /*
          * Application Service Providers...
          */

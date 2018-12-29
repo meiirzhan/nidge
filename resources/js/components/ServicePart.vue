@@ -1,17 +1,49 @@
 <template>
     <div class="col-md-6 col-12 text-wrapper">
       <h1>We will do our best.</h1>
-      <ul>
+      <div class="row services">
+        <div class="col-md-4 col-12">
+          <img src="/img/service_item_1.png" class="img-fluid" alt="">
+          <h3>ДИЗАЙН / BRANDING</h3>
+          <p>
+            Фирменный стиль<br />
+            Брендинг<br />
+            Прессматериалы<br />
+            Ребрендинг
+          </p>
+        </div>
+        <div class="col-md-4 col-12">
+          <img src="/img/service_item_2.png" class="img-fluid" alt="">
+          <h3>DEVELOPING / РАЗРАБОТКА</h3>
+          <p>
+            Веб сайты<br />
+            Мобильные приложения<br />
+            Програмные обеспечения<br />
+            CRM системы<br />
+            Outsourcing
+          </p>
+        </div>
+        <div class="col-md-4 col-12">
+          <img src="/img/service_item_3.png" class="img-fluid" alt="">
+          <h3>ВИДЕОСЪЕМКА</h3>
+          <p>
+            Промо ролики<br />
+            Анимационные ролики<br />
+            Love Story
+          </p>
+        </div>
+      </div>
+      <!-- <ul>
         <li>
-          <img src="/img/computer.png" alt=""> Разработка веб - сайтов и приложении
+          Разработка веб - сайтов и приложении
         </li>
         <li>
-          <img src="/img/web-design.png" alt=""> Разработа мобильных приложении
+          Разработа мобильных приложении
         </li>
         <li>
-          <img src="/img/presentation.png" alt=""> Съемка промо-роликов
+          Съемка промо-роликов
         </li>
-      </ul>
+      </ul> -->
       <CalculateButton />
       <router-link tag="div" to="/" class="show-project">
         <a>Посмотреть проекты <img src="/img/arrow.png" /></a>
@@ -40,12 +72,26 @@
     font-size: 2.5rem;
     font-family: 'Rubik';
     font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .services > div {
+    text-align: center;
+  }
+  .services h3 {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .services p {
+    color: #828282;
   }
   ul {
     font-size: 1.5rem;
     font-weight: lighter;
     list-style: none;
     padding: 5px 0px;
+    display: none;
     position: relative;
     border-left: 2px solid #26C281;
   }

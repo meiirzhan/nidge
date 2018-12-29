@@ -1,6 +1,6 @@
 <template>
     <div class="row-wo-mg main-part">
-      <ImagePart :src="projects[activeProjectId].image" />
+      <ImagePart :src="projects[activeProjectId].image" :mobsrc="projects[activeProjectId].image_fw" />
       <ProjectTextPart
         :project="projects[activeProjectId]"
         :projects="projects"
@@ -29,7 +29,8 @@
                 reviewText: "Ребята круто разработали систему что облегчало нам работу с управлением мероприятии",
                 authorName: "Ахметов Темирлан",
                 authorCompany: "Директор DelphinAgency",
-                authorAvatar: "/img/projects/1_author.png"
+                authorAvatar: "/img/projects/1_author.png",
+                works: ['Разработан дизайн на <strong>Figma / PS</strong>', 'Разработано клиентская часть на <strong>ReactJS</strong>', 'Разработано серверная часть на <strong>Laravel</strong>', 'Техническая поддержка']
               },
               {
                 image: '/img/projects/insa_2.jpg',
@@ -40,18 +41,20 @@
                 reviewText: "Этот проект мы сделали с душой",
                 authorName: "Рыскелді Мейіржан",
                 authorCompany: "Директор NIDGE / INSA",
-                authorAvatar: "/img/projects/1_author.png"
+                authorAvatar: "/img/projects/1_author.png",
+                works: ['Разработан дизайн на <strong>Figma</strong>', 'Разработано клиентская часть на <strong>VueJS</strong>', 'Разработано серверная часть на <strong>Laravel</strong>', 'Техническая поддержка']
               },
               {
                 image: '/img/projects/roomlook_2.jpg',
                 image_fw: '/img/projects/roomlook.jpg',
-                title: "RoomLook - площадька для дизайнеров и любетелей",
+                title: "RoomLook - портал для дизайнеров и любетелей",
                 subtitle: "Разработано 2016 году",
                 link: "roomlook.com",
                 reviewText: "NIDGE огонь, они сделали очень профессионально и ответили на все вопросы",
                 authorName: "Ужкенов Айбек",
                 authorCompany: "Директор Roomlook",
-                authorAvatar: "/img/projects/1_author.png"
+                authorAvatar: "/img/projects/1_author.png",
+                works: ['Разработан дизайн на <strong>PS</strong>', 'Разработано клиентская часть на <strong>Blade</strong>', 'Разработано серверная часть на <strong>Laravel</strong>', 'Техническая поддержка']
               },
               {
                 image: '/img/projects/intemotion_2.jpg',
@@ -62,7 +65,8 @@
                 reviewText: "Ребята круто разработали систему что облегчало нам работу с управлением мероприятии",
                 authorName: "Карагусова Данна",
                 authorCompany: "Директор Intemotion",
-                authorAvatar: "/img/projects/1_author.png"
+                authorAvatar: "/img/projects/1_author.png",
+                works: ['Разработан дизайн на <strong>PS</strong>', 'Разработано клиентская часть на <strong>Blade</strong>', 'Разработано серверная часть на <strong>Laravel / NodeJS</strong>', 'Техническая поддержка']
               },
               {
                 image: '/img/projects/polekz_2.jpg',
@@ -73,7 +77,8 @@
                 reviewText: "Ребята круто разработали систему что облегчало нам работу с управлением мероприятии",
                 authorName: "Ужкенов Айбек",
                 authorCompany: "Директор POLEKZ",
-                authorAvatar: "/img/projects/1_author.png"
+                authorAvatar: "/img/projects/1_author.png",
+                works: ['Разработан дизайн на <strong>Figma</strong>', 'Разработано клиентская часть на <strong>Blade</strong>', 'Разработано серверная часть на <strong>Laravel</strong>', 'Техническая поддержка']
               },
               {
                 image: '/img/projects/automoney_2.jpg',
@@ -84,7 +89,8 @@
                 reviewText: "Ребята круто разработали систему что облегчало нам работу с управлением мероприятии",
                 authorName: "Калиев Бауыржан",
                 authorCompany: "Директор Marazini",
-                authorAvatar: "/img/projects/1_author.png"
+                authorAvatar: "/img/projects/1_author.png",
+                works: ['Разработан дизайн на <strong>Figma</strong>', 'Разработано клиентская часть на <strong>Blade</strong>', 'Разработано серверная часть на <strong>Laravel</strong>', 'Техническая поддержка']
               }
             ],
             projectId: 0

@@ -3,7 +3,7 @@
       <h1 v-html="title"></h1>
       <div class="description"  v-html="description"></div>
       <CalculateButton />
-      <router-link tag="div" to="/" class="show-project">
+      <router-link tag="div" to="/projects" class="show-project">
         <a>Посмотреть проекты <img src="/img/arrow.png" /></a>
       </router-link>
     </div>
@@ -71,6 +71,12 @@
   @media (max-width: 767px) {
     .calc {
       padding: 0.6rem 0.5rem;
+    }
+    h1 {
+      margin-top: 10%;
+      font-size: 2rem;
+      font-family: 'Rubik';
+      font-weight: 700;
     }
     .show-project {
       position: static;

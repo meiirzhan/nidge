@@ -11,21 +11,39 @@
     import CalculationForm from './CalculationForm';
     import ContactForm from './ContactForm';
     export default {
+        data: function() {
+          return {
+            calcModal: null,
+            formModal: null,
+          };
+        },
         mounted() {
 
         },
         methods: {
           openModalCalculation: function() {
-            vueSlideoutPanelService.show({
+            this.calcModal = vueSlideoutPanelService.show({
               component: CalculationForm,
+              props: {
+                close: this.closeModalCalculation
+              },
               width: '500px' //customize the width
             });
           },
           openModalForm: function() {
-            vueSlideoutPanelService.show({
+            this.formModal = vueSlideoutPanelService.show({
               component: ContactForm,
+              props: {
+                close: this.closeModalForm
+              },
               width: '500px' //customize the width
             });
+          },
+          closeModalCalculation: function() {
+            if (this.calcModal != null) this.calcModal.hide();
+          },
+          closeModalForm: function() {
+            if (this.formModal != null) this.formModal.hide();
           }
         }
     }

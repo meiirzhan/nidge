@@ -1,7 +1,8 @@
 <template>
     <div class="calculator-wrapper">
+      <div class="close" @click="close">&times;</div>
       <h1>Оставьте заявку</h1>
-      <p>Наш менеджер с Вами свяжеься</p>
+      <p>Наш менеджер с Вами свяжется</p>
       <div class="row">
           <div class="col-12">
             <form
@@ -22,7 +23,7 @@
                 <pulse-loader :loading="loading" :color="color" v-if="isLoading"></pulse-loader>
                 <span v-else>{{ buttonText }}</span>
               </button>
-              <p class="confidencial">Все данные конфедициальны</p>
+              <!-- <p class="confidencial">Все данные конфедициальны</p> -->
             </form>
           </div>
       </div>
@@ -39,6 +40,12 @@
             name: '',
             phone: '',
             buttonText: 'Отправить заявку'
+          }
+        },
+        props: {
+          close: {
+            type: Function,
+            required: true
           }
         },
         methods: {
@@ -99,7 +106,6 @@
     color: #666;
     font-weight: 300;
   }
-
   .btn {
     width: 100%;
     font-size: 1rem;
