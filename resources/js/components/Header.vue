@@ -5,7 +5,7 @@
           <img src="/img/logo.png" alt="" class="logo-mb">
         </div>
         <div class="col-8 d-block d-xl-none text-right">
-          <p class="mb-0">Есть вопросы? Звони :)</p>
+          <p class="mb-0">Бесплатная консультация</p>
           <div class="phone-number">
             <a href="tel:87087080495">+7 708 708 0495</a>
           </div>
@@ -29,7 +29,7 @@
               </ul>
             </div>
             <div class="col-xl-4 phone-number-wrapper d-none d-xl-block">
-              <p>Есть вопросы? Звони :)</p>
+              <p>Бесплатная консультация</p>
               <div class="phone-number">
                 <a href="tel:87087080495">+7 708 708 0495</a>
               </div>

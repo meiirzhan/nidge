@@ -4,6 +4,7 @@
 
 // Variables
 @import 'variables';
+@import 'glitchs';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -18,8 +19,9 @@ html, body {
 }
 body {
   height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
 }
+
 @media (max-width: 1024px) {
   body {
     overflow: scroll;

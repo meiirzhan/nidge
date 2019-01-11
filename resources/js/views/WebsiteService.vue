@@ -1,6 +1,6 @@
 <template>
     <div class="row-wo-mg main-part">
-      <!-- <ImagePart src="/img/service_2.jpg" mobsrc="/img/service.jpg" /> -->
+      <ImagePart src="/img/service_2.jpg" mobsrc="/img/service.jpg" />
       <ServicePart />
     </div>
 </template>

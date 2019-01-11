@@ -1,36 +1,108 @@
 <template>
-    <div class="col-md-6 col-12 text-wrapper">
-      <h1>We will do our best.</h1>
-      <div class="row services">
-        <div class="col-md-4 col-12">
-          <img src="/img/service_item_1.png" class="img-fluid" alt="">
-          <h3>ДИЗАЙН / BRANDING</h3>
+    <div class="col-md-12 col-12 text-wrapper">
+      <h1>Наши услуги</h1>
+      <h2>We will do our best.</h2>
+      <div class="row services glitch-images">
+        <div class="col-md-2  col-12">
+            <a href="#">
+                <div class="glitch glitch--style-1">
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    			</div>
+                <h3 class="service-title" data-text="ДИЗАЙН / BRANDING">ДИЗАЙН / BRANDING</h3>
+            </a>
           <p>
-            Фирменный стиль<br />
-            Брендинг<br />
-            Прессматериалы<br />
+            Фирменный стиль /
+            Брендинг /
+            Прессматериалы /
             Ребрендинг
           </p>
+          <a href="#">Подробнее</a>
         </div>
-        <div class="col-md-4 col-12">
-          <img src="/img/service_item_2.png" class="img-fluid" alt="">
-          <h3>DEVELOPING / РАЗРАБОТКА</h3>
+        <div class="col-md-2 col-12">
+            <a href="#">
+                <div class="glitch glitch--style-6">
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    			</div>
+                <h3 class="service-title" data-text="Создание сайтов">Создание сайтов</h3>
+            </a>
           <p>
-            Веб сайты<br />
-            Мобильные приложения<br />
-            Програмные обеспечения<br />
-            CRM системы<br />
-            Outsourcing
+            Landing Page / Корпоративный сайт / Сайт визитки  / Интеграция с AmoCRM
           </p>
+          <a href="#">Подробнее</a>
         </div>
-        <div class="col-md-4 col-12">
-          <img src="/img/service_item_3.png" class="img-fluid" alt="">
-          <h3>ВИДЕОСЪЕМКА</h3>
+        <div class="col-md-2 col-12">
+            <a href="#">
+                <div class="glitch glitch--style-4">
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    			</div>
+                <h3 class="service-title" data-text="Продвижение и поддержка сайта">Продвижение и поддержка сайта</h3>
+            </a>
+            <p>
+              SEO оптимизация / Настройка Google и Яндекс рекламы / Техническая поддержка
+            </p>
+            <a href="#">Подробнее</a>
+        </div>
+        <div class="col-md-2 col-12">
+            <a href="#">
+                <div class="glitch glitch--style-2">
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    			</div>
+              <h3 class="service-title" data-text="Создание сложных систем">Создание сложных систем</h3>
+          </a>
           <p>
-            Промо ролики<br />
-            Анимационные ролики<br />
-            Love Story
+            Интернет-магазины / CRM системы / ERP системы
           </p>
+          <a href="#">Подробнее</a>
+        </div>
+        <div class="col-md-2 col-12">
+            <a href="#">
+                <div class="glitch glitch--style-5">
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    			</div>
+                <h3 class="service-title" data-text="Создание мобильного приложение">Создание мобильного приложение</h3>
+            </a>
+            <p>
+            Разработка iOS / Android приложения любой сложности
+            </p>
+            <a href="#">Подробнее</a>
+        </div>
+        <div class="col-md-2 col-12">
+            <a href="#">
+                <div class="glitch glitch--style-3">
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    				<div class="glitch__img"></div>
+    			</div>
+                <h3 class="service-title" data-text="ВИДЕОСЪЕМКА">ВИДЕОСЪЕМКА</h3>
+            </a>
+          <p>
+            Промо ролики /
+            Анимационные ролики /
+            Съемка мероприятии
+          </p>
+          <a href="#">Подробнее</a>
         </div>
       </div>
       <!-- <ul>
@@ -44,21 +116,25 @@
           Съемка промо-роликов
         </li>
       </ul> -->
-      <CalculateButton />
-      <router-link tag="div" to="/" class="show-project">
-        <a>Посмотреть проекты <img src="/img/arrow.png" /></a>
-      </router-link>
+      <div>
+          <h3>Нужна полная упакова для бизнеса?</h3>
+          <h4>Дизайн + Сайт + Видеосъемка + Продвижение + Поддержка</h4>
+          <FullServiceButton />
+          <router-link tag="div" to="/" class="show-project">
+            <a>Посмотреть проекты <img src="/img/arrow.png" /></a>
+          </router-link>
+      </div>
     </div>
 </template>
 
 <script>
 
-    import CalculateButton from './CalculateButton';
+    import FullServiceButton from './FullServiceButton';
 
     export default {
         name: "ServicePart",
         components: {
-          CalculateButton
+          FullServiceButton
         },
         mounted() {
 
@@ -68,12 +144,27 @@
 
 <style scoped>
   h1 {
-    margin-top: 30%;
+    margin-top: 10%;
     font-size: 2.5rem;
     font-family: 'Rubik';
     font-weight: 700;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+  }
+  h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: gray;
+
+  }
+  h3 {
+      font-weight: bold;
+      font-family: 'Rubik';
+      font-size: 2rem;
+      margin-top: 2rem;
+  }
+  h4 {
+      margin-bottom: 0;
   }
   .services > div {
     text-align: center;
@@ -85,6 +176,9 @@
   }
   .services p {
     color: #828282;
+  }
+  .service-title {
+      text-transform: uppercase;
   }
   ul {
     font-size: 1.5rem;
